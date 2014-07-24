@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>logmein</title>
+    <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -25,25 +26,20 @@
 
     <div class="hero-unit">
       <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
-
-
-        <li>Modernizr</li>
-
-
-        <li>Bourbon & Neat</li>
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
+        <form class="signupform">
+            Username: <input type="text" name="username" id="name" placeholder="Username" required="yes"> <br>
+            Password: <input type="text" name="password" id="password" placeholder="Password" required="yes"> <br>
+            email: <input type="text" name="email" id="email" placeholder="ianyad@exmp.com" required="yes"> <br>
+            <input type="submit" onclick="Register" value="Register">
+        </form>
+        <br/>
+        <form class="signIn">
+            Username: <input type="text" name="username2" id="username" placeholder="Username" required="yes"> <br>
+            Password: <input type="text" name="password2" id="password2" placeholder="Password" required="yes"> <br>
+            email: <input type="text" name="email2" id="email2" placeholder="ianyad@exmp.com" required="yes"> <br>
+            <input type="submit" onclick="login" value="login">
+        </form>
+            
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
